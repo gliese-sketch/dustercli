@@ -1,10 +1,28 @@
 import { intro, outro, log } from "@clack/prompts";
+import { readCSV, writeCSV } from "./lib/io.js";
+
 import prompt from "./lib/prompt.js";
 
-intro("DusterCLI app starting");
+async function main() {
+  // Start interactive CLI
+  intro("DusterCLI app starting");
 
-const { input, output, errors } = await prompt();
+  // Get user prompt
+  const { input, output, errors } = await prompt();
 
-log.success(`${input} ${output} ${errors}`);
+  // Read the file
+  const data = readCSV(input);
 
-outro("Thanks for using our app!");
+  log.message("File has been read successfully!");
+
+  // Create clean csv
+  writeCSV(output, data.body);
+
+  log.message("File has been created!");
+
+  // TODO: Create errors.csv
+
+  outro("Thanks for using our app!");
+}
+
+main();

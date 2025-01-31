@@ -11,6 +11,9 @@ importers:
       '@clack/prompts':
         specifier: ^0.9.1
         version: 0.9.1
+      papaparse:
+        specifier: ^5.5.2
+        version: 5.5.2
       yargs:
         specifier: ^17.7.2
         version: 17.7.2
@@ -56,6 +59,9 @@ packages:
   is-fullwidth-code-point@3.0.0:
     resolution: {integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==}
     engines: {node: '>=8'}
+
+  papaparse@5.5.2:
+    resolution: {integrity: sha512-PZXg8UuAc4PcVwLosEEDYjPyfWnTEhOrUfdv+3Bx+NuAb+5NhDmXzg5fHWmdCh1mP5p7JAZfFr3IMQfcntNAdA==}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -129,6 +135,8 @@ snapshots:
   get-caller-file@2.0.5: {}
 
   is-fullwidth-code-point@3.0.0: {}
+
+  papaparse@5.5.2: {}
 
   picocolors@1.1.1: {}
 
