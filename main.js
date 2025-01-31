@@ -1,6 +1,6 @@
 import { intro, outro, log } from "@clack/prompts";
-import { readCSV, writeCSV } from "./lib/io.js";
 
+import { readCSV, writeCSV } from "./lib/io.js";
 import prompt from "./lib/prompt.js";
 
 async function main() {
