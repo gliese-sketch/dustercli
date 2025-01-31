@@ -1,8 +1,9 @@
 {
   "name": "dustercli",
   "version": "1.0.0",
-  "description": "",
+  "description": "Parse and validate csv with ease.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node --env-file=.env --watch main.js"
   },
